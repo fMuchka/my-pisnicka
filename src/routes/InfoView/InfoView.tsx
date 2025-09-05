@@ -51,7 +51,6 @@ const InfoView = () => {
 
       <Typography color="error" marginBottom={'1rem'}>
         STRÁNKY NEJSOU URČENĚ PRO VÝDĚLEK. <br />
-        Ani můj či náš. Ani tvůj či váš.
       </Typography>
       <Typography marginBottom={'1rem'}>
         Jsou zamýšlené jako zpěvník pro bezstarostnou zábavu mou a mého okolí.
