@@ -22,3 +22,8 @@ export enum Notes {
   A_SHARP = 'A#',
   B = 'B',
 }
+
+export enum Instruments {
+  GUITAR = 'guitar',
+  UKULELE = 'ukulele',
+}

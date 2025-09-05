@@ -4,12 +4,14 @@ import { Box, Button, Divider, Modal, Stack, Typography } from '@mui/material';
 import {
   Notes,
   HSystem,
+  Instruments,
 } from '../../features/Controls/ChordDetailsControl/enums';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 // @ts-expect-error TODO: Fix types import
 import TomChord from '@tombatossals/react-chords/lib/Chord';
 import guitarChords from '@tombatossals/chords-db/lib/guitar.json';
+import ukuleleChords from '@tombatossals/chords-db/lib/ukulele.json';
 import type { RootState } from '../../app/store';
 import { useSelector } from 'react-redux';
 
@@ -53,7 +55,7 @@ type ChordDiagramProps = {
 };
 
 const ChordDiagram = (props: ChordDiagramProps) => {
-  const { hSystem } = useSelector(
+  const { hSystem, instrument } = useSelector(
     (state: RootState) => state.chordDetailsReducer
   );
 
@@ -92,11 +94,24 @@ const ChordDiagram = (props: ChordDiagramProps) => {
             (e) => e.suffix === suffix
           );
 
+    const chordsDetails =
+      instrument === Instruments.GUITAR ? guitarChords : ukuleleChords;
+
     const positions =
       // @ts-expect-error TODO: fix types
-      guitarChords.chords[chordsMappingToTomChord[root]][index].positions;
+      chordsDetails.chords[chordsMappingToTomChord[root]][index].positions;
 
-    const instrument = {
+    const ukulele = {
+      strings: 4,
+      fretsOnChord: 4,
+      name: 'Ukulele',
+      keys: [],
+      tunings: {
+        standard: [Notes.G, Notes.C, Notes.E, Notes.A],
+      },
+    };
+
+    const guitar = {
       strings: 6,
       fretsOnChord: 4,
       name: 'Guitar',
@@ -112,6 +127,10 @@ const ChordDiagram = (props: ChordDiagramProps) => {
         ],
       },
     };
+
+    const instrumentConfig =
+      instrument === Instruments.GUITAR ? guitar : ukulele;
+
     const lite = false; // defaults to false if omitted
 
     return (
@@ -140,7 +159,11 @@ const ChordDiagram = (props: ChordDiagramProps) => {
               </Typography>
               {positions.map((chord: unknown, index: number) => (
                 <div key={index}>
-                  <TomChord chord={chord} instrument={instrument} lite={lite} />
+                  <TomChord
+                    chord={chord}
+                    instrument={instrumentConfig}
+                    lite={lite}
+                  />
                   <Divider />
                 </div>
               ))}

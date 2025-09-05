@@ -8,7 +8,7 @@ import {
   Button,
 } from '@mui/material';
 import { useEffect, type MouseEvent } from 'react';
-import { ChordVisibility, HSystem, Notes } from './enums';
+import { ChordVisibility, HSystem, Instruments, Notes } from './enums';
 import { useDispatch, useSelector } from 'react-redux';
 import { currentSongTransposition, type RootState } from '../../../app/store';
 import {
@@ -16,6 +16,7 @@ import {
   setHSystem,
   setChordVisibility,
   setCurrentChords,
+  setInstrument,
 } from './chordDetailsSlice';
 import Chord from '../../../components/Chord/Chord';
 import styles from './ChordDetailsControl.module.css';
@@ -26,9 +27,8 @@ import {
 import useTranspositionMarks from '../../../hooks/useTranspositionMarks';
 
 const ChordDetailsToggle = () => {
-  const { hSystem, chordVisibility, currentChords, firstChord } = useSelector(
-    (state: RootState) => state.chordDetailsReducer
-  );
+  const { hSystem, chordVisibility, currentChords, firstChord, instrument } =
+    useSelector((state: RootState) => state.chordDetailsReducer);
 
   const { selectedSong } = useSelector((state: RootState) => state.songReducer);
 
@@ -76,6 +76,12 @@ const ChordDetailsToggle = () => {
       dispatch(
         setTransposition([selectedSong?.id as string, newFirstChord as Notes])
       );
+    }
+  };
+
+  const handleInstrumentChange = (_e: unknown, instrument: Instruments) => {
+    if (instrument !== null) {
+      dispatch(setInstrument(instrument));
     }
   };
 
@@ -196,6 +202,18 @@ const ChordDetailsToggle = () => {
             <ToggleButton value={HSystem.CZECH}>České H</ToggleButton>
           </ToggleButtonGroup>
         </Stack>
+        <ToggleButtonGroup
+          exclusive
+          size="small"
+          value={instrument}
+          color="primary"
+          onChange={(e, value) =>
+            handleInstrumentChange(e, value as Instruments)
+          }
+        >
+          <ToggleButton value={Instruments.GUITAR}>Kytara</ToggleButton>
+          <ToggleButton value={Instruments.UKULELE}>Ukulele</ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </Box>
   );

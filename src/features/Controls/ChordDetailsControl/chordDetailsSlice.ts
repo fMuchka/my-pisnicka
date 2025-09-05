@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import { ChordVisibility, HSystem, Notes } from './enums';
+import { ChordVisibility, HSystem, Instruments, Notes } from './enums';
 import type { RootState } from '../../../app/store';
 
 export interface ChordDetailsState {
@@ -15,6 +15,7 @@ export interface ChordDetailsState {
     suffix: string;
     root: string;
   }[];
+  instrument: Instruments;
 }
 
 const initialState: ChordDetailsState = {
@@ -26,6 +27,7 @@ const initialState: ChordDetailsState = {
     suffix: '',
   },
   currentChords: [],
+  instrument: Instruments.GUITAR,
 };
 
 const chordDetailsSlice = createSlice({
@@ -68,6 +70,10 @@ const chordDetailsSlice = createSlice({
     resetCurrentChords: (state) => {
       state.currentChords = [];
     },
+
+    setInstrument: (state, action: PayloadAction<Instruments>) => {
+      state.instrument = action.payload;
+    },
   },
 });
 
@@ -82,6 +88,7 @@ export const {
   setFirstChordSuffix,
   setCurrentChords,
   resetCurrentChords,
+  setInstrument,
 } = chordDetailsSlice.actions;
 
 export default chordDetailsSlice.reducer;
