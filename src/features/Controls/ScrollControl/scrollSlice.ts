@@ -10,7 +10,7 @@ export interface ScrollState {
 }
 
 const initialState: ScrollState = {
-  scrollSpeed: 1,
+  scrollSpeed: 2.25,
   isScrolling: false,
   scrollIntervalId: null,
   scrollStartDelay: 3,

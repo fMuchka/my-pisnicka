@@ -31,7 +31,6 @@ import {
   setColorScheme,
   setPrimaryColor,
 } from '../features/Controls/ThemeControl/themeSlice';
-import TopBar from '../components/AppBars/TopBar/TopBar';
 
 import { setScrollSpeed } from '../features/Controls/ScrollControl/scrollSlice';
 import {
@@ -178,7 +177,6 @@ function App() {
       <CssBaseline>
         <Container maxWidth="md">
           <HashRouter>
-            <TopBar />
             <Box sx={{ marginBottom: '5rem' }}>
               <Routes>
                 <Route path={RoutesEnum.SONG_LIST} element={<SongListView />} />

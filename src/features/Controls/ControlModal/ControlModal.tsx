@@ -1,7 +1,6 @@
-import { Audiotrack, FormatSize, Palette } from '@mui/icons-material';
+import { FormatSize, Palette } from '@mui/icons-material';
 import { Modal, Box, Tab, Tabs } from '@mui/material';
 import { useState } from 'react';
-import ChordDetailsControl from '../ChordDetailsControl/ChordDetailsControl';
 import ThemeToggle from '../ThemeControl/ThemeControl';
 import FontSizeToggle from '../FontSizeControl/FontSizeControl';
 import type { TabPanelProps, ControlModalProps } from './types';
@@ -34,8 +33,7 @@ const ControlModal = (props: ControlModalProps) => {
       <Modal
         open={props.open}
         onClose={() => props.setOpen(false)}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby="modal-settings"
       >
         <Box
           sx={{
@@ -50,23 +48,14 @@ const ControlModal = (props: ControlModalProps) => {
             p: 4,
           }}
         >
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="icon label tabs example"
-            centered
-          >
-            <Tab icon={<Audiotrack />} label="AKORDY" />
+          <Tabs value={value} onChange={handleChange} centered>
             <Tab icon={<Palette />} label="BARVY" />
             <Tab icon={<FormatSize />} label="TEXT" />
           </Tabs>
           <TabPanel value={value} index={0}>
-            <ChordDetailsControl />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
             <ThemeToggle />
           </TabPanel>
-          <TabPanel value={value} index={2}>
+          <TabPanel value={value} index={1}>
             <FontSizeToggle />
           </TabPanel>
         </Box>

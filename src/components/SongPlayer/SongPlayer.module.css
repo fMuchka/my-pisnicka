@@ -5,7 +5,6 @@
   height: 50px;
   z-index: 1;
   position: absolute;
-  top: 5px;
 }
 
 .scrollStartButton > svg {
@@ -13,7 +12,7 @@
 }
 
 .scrollStartButton + svg {
-  transform: translate(-60px, 5px);
+  transform: translate(-60px);
   position: absolute;
   fill: transparent;
   stroke: var(--mui-palette-primary-main);
