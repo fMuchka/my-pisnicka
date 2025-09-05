@@ -5,9 +5,11 @@ import {
   AccordionDetails,
   AccordionSummary,
   Badge,
+  Box,
   Button,
   Chip,
   Divider,
+  LinearProgress,
   Stack,
   TextField,
   ToggleButton,
@@ -314,67 +316,82 @@ const SongListView = () => {
             <Clear />
           </Button>
         </Stack>
-        <Stack spacing={2}>
-          <SimpleTreeView
-            expandedItems={expandedItems}
-            onExpandedItemsChange={handleItemExpand}
-          >
-            {displaySongs?.map((group, idx) => (
-              <TreeItem itemId={idx.toString()} key={idx} label={group.author}>
-                {group.songs.map((song, idx) => (
-                  <TreeItem
-                    itemId={`${idx}-${song.id}`}
-                    key={`${idx}-${song.id}`}
-                    label={
-                      <Stack spacing={1} key={idx}>
-                        <Stack direction={'row'} alignItems={'center'}>
-                          <Button
-                            sx={{
-                              placeContent: 'space-between',
-                              textAlign: 'start',
-                              width: '75%',
-                              marginRight: '1em',
-                            }}
-                            key={idx}
-                            onClick={() => handleSongClick(song)}
-                            variant={
-                              song.id === selectedSong?.id
-                                ? 'contained'
-                                : 'outlined'
-                            }
-                          >
-                            {song.title}
-                          </Button>
-                          {queue.includes(song) ? (
-                            <Chip
-                              icon={<PlaylistRemove />}
-                              label="Fronta"
-                              variant="outlined"
+
+        {displaySongs == null || displaySongs.length === 0 ? (
+          <Box sx={{ width: '100%' }}>
+            <Typography>Načítám písně...</Typography>
+            <br />
+            <LinearProgress />
+          </Box>
+        ) : (
+          <Stack spacing={2}>
+            <SimpleTreeView
+              expandedItems={expandedItems}
+              onExpandedItemsChange={handleItemExpand}
+              selectedItems={''}
+            >
+              {displaySongs?.map((group, idx) => (
+                <TreeItem
+                  itemId={idx.toString()}
+                  key={idx}
+                  label={group.author}
+                >
+                  {group.songs.map((song, idx) => (
+                    <TreeItem
+                      itemId={`${idx}-${song.id}`}
+                      key={`${idx}-${song.id}`}
+                      label={
+                        <Stack spacing={1} key={idx}>
+                          <Stack direction={'row'} alignItems={'center'}>
+                            <Button
                               sx={{
-                                borderRadius: 'var(--mui-shape-borderRadius)',
+                                placeContent: 'space-between',
+                                textAlign: 'start',
+                                width: '75%',
+                                marginRight: '1em',
                               }}
-                              onClick={() => removeFromQueue(song)}
-                            />
-                          ) : (
-                            <Chip
-                              icon={<PlaylistAdd />}
-                              label="Fronta"
-                              variant="filled"
-                              sx={{
-                                borderRadius: 'var(--mui-shape-borderRadius)',
-                              }}
-                              onClick={() => addToQueue(song)}
-                            />
-                          )}
+                              key={idx}
+                              onClick={() => handleSongClick(song)}
+                              variant={
+                                song.id === selectedSong?.id
+                                  ? 'contained'
+                                  : 'outlined'
+                              }
+                            >
+                              {song.title}
+                            </Button>
+                            {queue.includes(song) ? (
+                              <Chip
+                                icon={<PlaylistRemove />}
+                                label="Fronta"
+                                variant="outlined"
+                                color="error"
+                                sx={{
+                                  borderRadius: 'var(--mui-shape-borderRadius)',
+                                }}
+                                onClick={() => removeFromQueue(song)}
+                              />
+                            ) : (
+                              <Chip
+                                icon={<PlaylistAdd />}
+                                label="Fronta"
+                                variant="filled"
+                                sx={{
+                                  borderRadius: 'var(--mui-shape-borderRadius)',
+                                }}
+                                onClick={() => addToQueue(song)}
+                              />
+                            )}
+                          </Stack>
                         </Stack>
-                      </Stack>
-                    }
-                  ></TreeItem>
-                ))}
-              </TreeItem>
-            ))}
-          </SimpleTreeView>
-        </Stack>
+                      }
+                    ></TreeItem>
+                  ))}
+                </TreeItem>
+              ))}
+            </SimpleTreeView>
+          </Stack>
+        )}
       </Stack>
     </div>
   );

@@ -56,6 +56,7 @@ const QueueView = () => {
               <Chip
                 icon={<PlaylistRemove />}
                 label="Fronta"
+                color="error"
                 variant="outlined"
                 sx={{ borderRadius: 'var(--mui-shape-borderRadius)' }}
                 onClick={() => removeFromQueue(song)}
