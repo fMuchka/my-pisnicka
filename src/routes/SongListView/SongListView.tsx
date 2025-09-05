@@ -19,6 +19,7 @@ import {
 import {
   Clear,
   ExpandMore,
+  FilterAlt,
   PlaylistAdd,
   PlaylistRemove,
 } from '@mui/icons-material';
@@ -82,7 +83,6 @@ const SongListView = () => {
     }[]
   >([]);
 
-  const [nOfAvailableSongs, setNOfAvailableSongs] = useState<number>(0);
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
 
   const navigate = useNavigate();
@@ -199,7 +199,6 @@ const SongListView = () => {
         });
 
         setExpandedItems(filtered.map((_, idx) => idx.toString()));
-        setNOfAvailableSongs(filtered.length);
         setDisplaySongs(Object.values(groupedByAuthor));
       } else {
         const groupedByAuthor: {
@@ -220,7 +219,6 @@ const SongListView = () => {
         } else {
           setExpandedItems([]);
         }
-        setNOfAvailableSongs(songsFilteredByText.length);
         setDisplaySongs(Object.values(groupedByAuthor) ?? []);
       }
     }
@@ -229,48 +227,19 @@ const SongListView = () => {
   return (
     <div style={{ marginTop: '2rem' }}>
       <Accordion>
-        <AccordionSummary expandIcon={<ExpandMore />}>
-          <Badge
-            badgeContent={
-              tagFilters.length > 0
-                ? nOfAvailableSongs > 0
-                  ? nOfAvailableSongs
-                  : ':-('
-                : 0
-            }
-            color="primary"
-          >
-            <Typography variant="body1" color="text.secondary">
-              Filtr podle typu
-            </Typography>
-          </Badge>
+        <AccordionSummary
+          style={{ display: 'flex', alignItems: 'center' }}
+          expandIcon={<ExpandMore />}
+        >
+          <FilterAlt />
+
+          <Typography variant="body1" color="text.secondary">
+            Filtr druhu písně - {tagFilters.length > 0 ? 'zapnuto' : 'vypnuto'}
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Stack spacing={5} direction={'row'}>
             <Stack spacing={2} direction={'column'} width={'100%'}>
-              <ToggleButtonGroup
-                size="small"
-                color="primary"
-                exclusive
-                sx={{ display: 'flex', flexDirection: 'column' }}
-                aria-labelledby="tag filter type"
-                value={shouldIncludeAllFilters}
-                onChange={(_e, val) => {
-                  if (val == null) return;
-                  dispatch(toggleInclusionFilterType());
-                }}
-              >
-                <ToggleButton value={true} aria-label="should include all tags">
-                  Obsahuje všechny vybrané
-                </ToggleButton>
-                <ToggleButton
-                  value={false}
-                  aria-label="should include at least one"
-                >
-                  Obsahuje alespoň jednu vybranou
-                </ToggleButton>
-              </ToggleButtonGroup>
-
               <div
                 style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr' }}
               >
@@ -290,10 +259,33 @@ const SongListView = () => {
                       }}
                       onClick={() => filterByTag(t)}
                       label={t}
+                      clickable={false}
                     />
                   </Badge>
                 ))}
               </div>
+              <ToggleButtonGroup
+                size="small"
+                color="primary"
+                exclusive
+                sx={{ display: 'flex', flexDirection: 'column' }}
+                aria-labelledby="tag filter type"
+                value={shouldIncludeAllFilters}
+                onChange={(_e, val) => {
+                  if (val == null) return;
+                  dispatch(toggleInclusionFilterType());
+                }}
+              >
+                <ToggleButton value={true} aria-label="should include all tags">
+                  Všechny vybrané (&)
+                </ToggleButton>
+                <ToggleButton
+                  value={false}
+                  aria-label="should include at least one"
+                >
+                  Alespoň jeden z vybraných (NEBO)
+                </ToggleButton>
+              </ToggleButtonGroup>
             </Stack>
           </Stack>
         </AccordionDetails>
@@ -318,11 +310,25 @@ const SongListView = () => {
         </Stack>
 
         {displaySongs == null || displaySongs.length === 0 ? (
-          <Box sx={{ width: '100%' }}>
-            <Typography>Načítám písně...</Typography>
-            <br />
-            <LinearProgress />
-          </Box>
+          tagFilters.length > 0 || textFilter.length > 0 ? (
+            <Stack spacing={2}>
+              <Typography>Filtru nic neodpovídá :-(</Typography>
+              <Button
+                variant="contained"
+                onClick={() => {
+                  dispatch(setTagFilters([]));
+                }}
+              >
+                Zrušit filtr
+              </Button>
+            </Stack>
+          ) : (
+            <Box sx={{ width: '100%' }}>
+              <Typography>Načítám písně...</Typography>
+              <br />
+              <LinearProgress />
+            </Box>
+          )
         ) : (
           <Stack spacing={2}>
             <SimpleTreeView
