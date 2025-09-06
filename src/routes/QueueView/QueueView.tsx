@@ -5,7 +5,7 @@ import { setSelectedSong } from '../../features/Songs/songsSlice';
 import type { RefinedSong } from '../../utils/rawSongRefiner';
 import { RoutesEnum } from '../routes';
 import { useNavigate } from 'react-router';
-import { DragHandle, PlaylistRemove } from '@mui/icons-material';
+import { PlaylistRemove } from '@mui/icons-material';
 import {
   removeSongFromQueue,
   setCurrentSongIndex,
@@ -41,8 +41,7 @@ const QueueView = () => {
           items={queue}
           setItems={(newQueue) => dispatch(setQueue(newQueue))}
           renderItem={(song) => (
-            <Stack direction="row" spacing={2} alignItems={'center'}>
-              <DragHandle />
+            <>
               <Button
                 sx={{ placeContent: 'space-between', textAlign: 'start' }}
                 onClick={() => handleSongClick(song)}
@@ -61,27 +60,9 @@ const QueueView = () => {
                 sx={{ borderRadius: 'var(--mui-shape-borderRadius)' }}
                 onClick={() => removeFromQueue(song)}
               />
-            </Stack>
+            </>
           )}
         />
-        {/* {queue.map((song, index) => (
-          <Stack direction="row" spacing={2} key={index}>
-            <Button
-              sx={{ placeContent: 'space-between', textAlign: 'start' }}
-              onClick={() => handleSongClick(song)}
-              fullWidth
-              variant={song.id === selectedSong?.id ? 'contained' : 'outlined'}
-            >
-              {song.id}
-            </Button>
-            <Chip
-              icon={<PlaylistRemove />}
-              label="Fronta"
-              variant="outlined"
-              onClick={() => removeFromQueue(song)}
-            />
-          </Stack>
-        ))} */}
       </Stack>
     </div>
   );

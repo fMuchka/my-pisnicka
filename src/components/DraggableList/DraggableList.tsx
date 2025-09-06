@@ -20,6 +20,7 @@ import {
 
 import SortableItem from './SortableItem/SortableItem';
 import styles from './DraggableList.module.css';
+import { Stack } from '@mui/material';
 
 // Define the type for an item so we can find it later
 type Item = { id: string | number; [key: string]: unknown };
@@ -109,11 +110,15 @@ const DraggableList = <T extends Item>({
       <DragOverlay>
         {activeItem ? (
           // We render a non-sortable version of the item here
-          <div
+          <Stack
+            direction={'row'}
+            width={'100%'}
+            alignItems={'center'}
+            spacing={2}
             className={`${styles['list-item']} ${styles['dragging-overlay']}`}
           >
             {renderItem(activeItem)}
-          </div>
+          </Stack>
         ) : null}
       </DragOverlay>
     </DndContext>

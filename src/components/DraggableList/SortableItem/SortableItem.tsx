@@ -3,6 +3,8 @@
 import React from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
+import { DragHandle } from '@mui/icons-material';
+import { Stack } from '@mui/material';
 
 interface SortableItemProps {
   id: string | number;
@@ -28,15 +30,19 @@ const SortableItem = ({ id, children, className }: SortableItemProps) => {
   };
 
   return (
-    <div
+    <Stack
+      direction={'row'}
+      width={'100%'}
+      alignItems={'center'}
+      spacing={2}
       ref={setNodeRef}
       style={style}
       {...attributes}
-      {...listeners}
       className={className}
     >
+      <DragHandle {...listeners} />
       {children}
-    </div>
+    </Stack>
   );
 };
 
