@@ -293,7 +293,10 @@ export const SongPlayer = () => {
               </Stack>
               <Stack spacing={1}>
                 <ButtonGroup size="small">
-                  <Button onClick={() => dispatch(decrementScrollStartDelay())}>
+                  <Button
+                    disabled={scrollStartDelay === 0}
+                    onClick={() => dispatch(decrementScrollStartDelay())}
+                  >
                     <Remove />
                   </Button>
                   <Button onClick={() => dispatch(incrementScrollStartDelay())}>
