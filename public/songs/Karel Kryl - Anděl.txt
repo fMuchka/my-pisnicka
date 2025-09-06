@@ -1,0 +1,67 @@
+Author:Karel Kryl
+Title:Anděl
+
+Tags: České, Táborová, Lidovka
+
+{chorus_1_start}
+[C]A proto [Am]prosím, věř mi,
+[C]chtěl jsem ho [G7]žádat,
+[C]aby mi [Am]mezi dveřmi
+[C]pomohl [G7]hádat,
+[C]co mě čeká[Am]--------[G7] a nemi[C]ne,
+[C]co mě čeká[Am]--------[G7] a nemi[C]ne.
+{chorus_1_end}
+
+{verse_1_start}
+[C]Z rozmláce[Am]nýho kostela
+[C]v krabici s [G7]kusem mýdla,
+[C]přinesl [Am]jsem si anděla,
+[C]polámali [G7]mu křídla.
+{verse_1_end}
+
+{verse_2_start}
+[C]Díval se [Am]na mě oddaně,
+[C]já měl jsem [G7]trochu trému.
+[C]Tak vtiskl [Am]jsem mu do dlaně
+[C]lahvičku [G7]od parfému.
+{verse_2_end}
+
+{verse_3_start}
+[C]Pak hlída[Am]li jsme oblohu,
+[C]pozoru[G7]jíce ptáky,
+[C]debatu[Am]jíce o Bohu
+[C]a hraní [G7]na vojáky.
+{verse_3_end}
+
+{verse_4_start}
+[C]Do tváře [Am]jsem mu neviděl,
+[C]pokoušel [G7]se ji schovat,
+[C]to asi [Am]ptákům záviděl,
+[C]že mohou [G7]poletovat.
+{verse_4_end}
+
+{verse_5_start}
+[C]Když novin[Am]ky mi sděloval
+[C]u okna [G7]do ložnice,
+[C]já křídla [Am]jsem mu ukoval
+[C]z mosazný [G7]nábojnice...
+{verse_5_end}
+
+{verse_6_start}
+[C]A tak jsem [Am]pozbyl anděla,
+[C]on oknem [G7]uletěl mi,
+[C]však přítel [Am]prý mi udělá
+[C]novýho z [G7]mojí helmy.
+{verse_6_end}
+
+{text_start}
+{verse_1}
+{verse_2}
+{chorus_1}
+{verse_3}
+{verse_4}
+{chorus_1}
+{verse_5}
+{verse_6}
+{chorus_1}
+{text_end}

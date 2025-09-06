@@ -1,0 +1,41 @@
+Author:Kabát
+Title:Moderní děvče
+
+Tags: České, Moderní
+
+{chorus_1_start}
+Jenže já sem
+[C]denně ožralej, [G] denně ožralej
+[Dm]mám velikej pupek, smrdím a [C]jsem špinave[G]j
+[C]Hodně piju, jim, [G] ženský nebalim
+[Dm]a když někdy o sobě vim [C]hned to oslavim[G].
+{chorus_1_end}
+
+{verse_1_start}
+[C]Moderní devče, [F] když chlapce spatří
+[G]vypadá jak klaun, [F] do cirkusu patří
+[C]růžovou vestu [F]a modrý voči
+[G]na diskotéce [F]kolem se točí
+[C]Jů, ten je báječný, [F] jistě má prachy
+[G]můj sen je vypadat [F]jednou tak taky.
+[C]oléo,[F] oléo Rio de [G]Janeiro[F]
+{verse_1_end}
+
+{verse_2_start}
+[C]Moderní holky [F]nosej pěkný nohy
+[G]vypadaj svatě, [F] jenže maj rohy
+[C]to sem si našel [F]moc špatnou cestu
+[G]piju a kouřím, [F]ježiš já klesnul
+[C]Chtěl bych být jiný, [F] bystrý a krásný
+[G]milovat děvče a[F] být s ní šťastný.
+[C]oléo,[F] oléo Leo Kang[G]asero[F]
+{verse_2_end}
+
+{text_start}
+{verse_1}
+{verse_2}
+{chorus_1}
+{chorus_1}
+{chorus_1}
+{chorus_1}
+{text_end}

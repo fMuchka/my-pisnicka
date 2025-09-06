@@ -1,0 +1,58 @@
+Author:Kabát
+Title:Bára
+
+Tags: České, Moderní
+
+{chorus_1_start}
+Víš já víš já [C]mám spoustu [Em]známejch v podze[Am]mí
+a divá [F]Bára se mnou [C]spí
+když je noc, všechno [Em]krásný zdá se [Am]mi
+to jsme my - [F]dávno prokle[Em]tý
+{chorus_1_end}
+
+{chorus_2_start}
+Víš já víš já [C]mám spoustu [Em]známejch v podze[Am]mí
+a divá [F]Bára se mnou [C]spí
+když je noc, všechno [Em]krásný zdá se [D5]mi 
+{chorus_2_end}
+
+{verse_1_start}
+[Em]Jenom se [Am]ptej
+kolem [C]plameny tančí
+[G]proč je tady divnej [F]chlad? 
+[Em]nepospí[Am]chej
+kdo tě [C]zavede zpátky
+a [G]kdo při Tobě bude [F]stát?
+{verse_1_end}
+
+{verse_2_start}
+Ještě je [Am]čas
+jak Tě [C]nestvůra kouše
+[G]schovej nohy do pe[F]řin 
+[Em]okolo [Am]nás
+je toho [C]tolik co zkoušet
+na [G]jedno zdraví nevě[F]řim
+{verse_2_end}
+
+{verse_3_start}
+[Em]Kdopak Tě [Am]zval?
+vem si [C]do dlaně růži
+[G]sevři ji a krve [F]pij 
+[Em]pojď jenom [Am]dál
+obleč [C]si mojí kůži
+[G]vysaj mě a pou[F]žij
+{verse_3_end}
+
+{text_start}
+[C] [Em] [Am] [F]
+[C] [Em] [D5]
+{verse_1}
+{chorus_1}
+{verse_2}
+{chorus_2}
+{verse_3}
+{chorus_1}
+{chorus_1}
+{chorus_1}
+{chorus_1}
+{text_end}

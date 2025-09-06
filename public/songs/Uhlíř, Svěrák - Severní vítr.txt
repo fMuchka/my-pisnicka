@@ -1,0 +1,56 @@
+Author:Jaroslav Uhlíř, Zdeněk Svěrák
+Title:Severní vítr
+
+Tags: České, Pohádky
+
+{chorus_1_start}
+[C]Severní [C7]vítr je [F]krutý, [C] počítej, lásko má, s [G7]tím
+[C]k nohám ti [C7]dám zlaté [F]pruty
+[F]nebo se [C]vůbec [G]nevrá[C]tím
+{chorus_1_end}
+
+{chorus_2_start}
+K [C]nohám ti [C7]dám zlaté [F]pruty
+nebo se [C]vůbec [G]nevrá[C]tím[G#]
+{chorus_2_end}
+
+{verse_1_start}
+Jdu s [C]děravou patou, mám [Am]horečku zlatou,
+jsem [F]chudý, jsem sláb, nemo[C]cen
+[C]hlava mně pálí, tam v [Am]modravé dáli
+se [F]leskne a [G]třpytí můj [C]sen
+{verse_1_end}
+
+{verse_2_start}
+Kraj [C]pod sněhem mlčí, tam [Am]stopy jsou vlčí
+tam [F]zbytečně budeš mi [C]psát
+sám v [C]dřevěné boudě sen [Am]o zlaté hroudě
+já [F]nechám si [G]tisíckrát [C]zdát
+{verse_2_end}
+
+{verse_3_start}
+Tak [C#]zarůstám vousem a [A#m]vlci už jdou sem
+já [F#]slyším je výt blíž a [C#]blíž
+už [C#]mají mou stopu, už [A#m]větří, že kopu
+si [F#]hrob a že [G#]stloukám si [C#]kříž
+{verse_3_end}
+
+{verse_4_start}
+Zde [C#]leží ten blázen, chtěl [A#m]dům a chtěl bazén
+a [F#]opustil tvou krásnou [C#]tvář
+má [C#]plechovej hrnek, a [A#m]pár zlatej zrnek
+a [F#]nad hrobem [G#]polární [C#]zář
+{verse_4_end}
+
+{text_start}
+{verse_1}
+{verse_2}
+{chorus_1}
+[MEZIHRA]
+{chorus_2}
+{verse_3}
+{verse_4}
+{chorus_1}
+[MEZIHRA]
+{chorus_2}
+{text_end}

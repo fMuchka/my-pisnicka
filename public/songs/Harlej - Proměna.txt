@@ -1,0 +1,36 @@
+Author:Harlej
+Title:Proměna
+
+Tags: České, Moderní, Ploužák
+
+{chorus_1_start}
+[G]Tvou, před sebou [A]mám, najednou [D]cizí a neznámou [G]tvář
+[G]krutou a studenou, [A] i když se [F#m]pořád usmívá
+z vlasů [G]máš ostnatej [A]drát a ze [D]rtů kape ti [G]jed
+pořád [G]nevěřím, že tohle v [A]sobě ukrý[F#m]váš
+{chorus_1_end}
+
+{verse_1_start}
+[D]Ještě před chví[E]lí myslel jsem, [F#m] že tě už dobře [E]znám
+se všema [D]chybama, co ani sama [E]nepři[F#m]zná---š[E]
+[D]stačil okamžik [E]jen, pořád jsem [F#m]doufal, že je to hra[E]
+který se [D]budeme už brzo [E]jen oba [F#m]smát [E]
+{verse_1_end}
+
+{verse_2_start}
+[D]Možná to přesta[E]ne, možná se [F#m]sama pole[E]káš
+a znovu si [D]nasadíš tu svoji [E]starou známou [F#m]tvá---ř[E]
+[D]jenže už napořád, [E] budu mít v [F#m]sobě schovanej [E]strach
+kolik těch [D]proměn ještě přede [E]mnou schová[F#m]vá---š[E]
+
+kolik těch [D]proměn ještě přede [E]mnou schová[F#m]vá---š[E]
+kolik těch [D]proměn ještě přede [E]mnou schová[F#m]vá---š[E]
+{verse_2_end}
+
+{text_start}
+{verse_1}
+{chorus_1}
+{verse_2}
+{chorus_1}
+{chorus_1}
+{text_end}

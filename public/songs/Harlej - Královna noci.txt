@@ -1,0 +1,44 @@
+Author:Harlej
+Title:Královna noci
+
+Tags: České, Moderní
+
+{chorus_1_start}
+Možná se [C]svezeme ještě [E]jednou
+Tou stejnou noční [Am]tramvají
+A [F]tvoje dlouhý černý vlasy poznám už [G]z dálky
+Možná se [C]svezeme ještě [E]jednou
+Tou naší noční [Am]tramvají
+Která nás [F]oba vezme na chvilku malou
+Na chvíli [G]zpátky
+{chorus_1_end}
+
+{verse_1_start}
+[C]Byla jsi chladná jak černá víla.
+[Am]Ve dne jsi spala a v noci žila
+[F]Nevinnej anděl co přišel z pekla
+[G]Měla jsi všechno vo co sis řekla
+[C]Byla jsi hvězdou v divadle stínů
+[Am]Nikdo tě neměl víc, než pár minut
+[F]Tak proč jsi byla tak dlouho se mnou
+[G]Kde jsem tě našel bludičku z temnot
+{verse_1_end}
+
+{verse_2_start}
+[C]Tvá bílá kůže svítila nocí
+[Am]Padaly hvězdy a já měl pocit
+[F]Že je dost divný jak ti to sluší
+[G]Komu jsi vlastně upsala duši
+[C]Neměl jsem sílu abych ti stačil
+[Am]Hodně jsem dostal ještě víc ztratil
+[F]Ve snu mě děsí podivný stvůry
+[G]Z královny noci mám noční můry
+{verse_2_end}
+
+{text_start}
+{chorus_1}
+{verse_1}
+{chorus_1}
+{verse_2}
+{chorus_1}
+{text_end}

@@ -1,0 +1,74 @@
+Author:Karel Kryl
+Title:Morituri te salutant
+
+Tags: České, Táborová, Lidovka
+
+{chorus_1_start}
+[G]Seržante písek je bílý, jak paže Daniely.
+[Am]Počkejte chvíli!
+Mé oči uviděly, [G]tu strašně dávnou vteřinu zapomnění.
+[Am]Seržante! Mávnou
+[G7]a budem zasvěceni
+[Am]Morituri te salutant.
+Morituri [E]te salutant.
+{chorus_1_end}
+
+{verse_1_start}
+Cesta je [Am]prach a [G]štěrk,
+a [Dm]udusaná [Am]hlína.
+[C]A šedé [F]šmouhy
+[G7]kreslí do vla[C]sů.
+A z hvězdných [Dmi]drah má [G]šperk,
+co [C]kamením se [E]spíná.
+[Ami]A pírka [G]touhy z [Emi]křídel Pega[Ami]sů
+A z hvězdných [Dmi]drah má [G]šperk,
+co [C]kamením se [E]spíná.
+[Ami]A pírka [G]touhy z [Emi]křídel Pega[Ami]sů
+{verse_1_end}
+
+{verse_2_start}
+Cesta je [Am]bič, je [G]zlá,
+jak [Dm]pouliční [Am]dáma.
+[C]Má v ruce [F]štítky, v [G7]pase stani[C]ol.
+A z očí [Dm]chtíč jí [G]plá, když [C]háže do nez[E]náma
+[Am]dvě křehké [G]snítky [Emi]rudých gladi[Am]ol.
+A z očí [Dm]chtíč jí [G]plá, když [C]háže do nez[E]náma
+[Am]dvě křehké [G]snítky [Emi]rudých gladi[Am]ol.
+{verse_2_end}
+
+{verse_3_start}
+Tou cestou [Am]dál jsem [G]šel,
+kde [Dm]na zemi se [Am]zmítá.
+[C]A písek [F]víří [G7]křídla holu[C]bí.
+A marš mi [Dm]hrál, zvuk [G]děl,
+co [C]uklidnění [E]skýtá.
+[Am]A zvedá [G]chmýří, [Emi] které zahu[Am]bí.
+A marš mi [Dm]hrál, zvuk [G]děl,
+co [C]uklidnění [E]skýtá.
+[Am]A zvedá [G]chmýří, [Emi] které zahu[Am]bí.
+{verse_3_end}
+
+{verse_4_start}
+Cesta je [Am]tér a p[G]rach,
+a [Dm]udusaná [Am]hlína.
+[C]Mosazná [F]včelka [G7]od vlkodla[C]ka.
+Rezavý [Dm]kvér - můj [G]brach.
+A sto [C]let stará [E]špína.
+[Am]A děsně [G]velká [Emi]bílá obla[Am]ka.
+Rezavý [Dm]kvér - můj [G]brach.
+A sto [C]let stará [E]špína.
+[Am]A děsně [G]velká [Emi]bílá obla[Am]ka.
+{verse_4_end}
+
+{text_start}
+[Ami] [G] [Ami]
+{verse_1}
+[Ami] [G] [Ami]
+{verse_2}
+{chorus_1}
+[Ami] [G] [Ami]
+{verse_3}
+[Ami] [G] [Ami]
+{verse_4}
+{chorus_1}
+{text_end}
